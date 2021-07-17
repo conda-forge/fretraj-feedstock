@@ -21,6 +21,7 @@ requirements:
     - python
     - pip
     - poetry-core
+    - pybind11
     - pybind11-abi
   run:
     - python
