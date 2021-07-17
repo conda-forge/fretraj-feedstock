@@ -11,8 +11,8 @@ source:
   sha256: 22ded095ac022c5f9d49ed6df9867ea8320f9e1a5817d70e43e0bcc2336259c7
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -20,8 +20,8 @@ requirements:
   host:
     - python
     - pip
-    - poetry
-    - pybind11
+    - poetry-core
+    - pybind11-abi
   run:
     - python
     - numpy
@@ -41,6 +41,7 @@ test:
     - pip
   commands:
     - pip check
+    - fretraj -h
 
 
 about:
