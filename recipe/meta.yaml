@@ -1,5 +1,5 @@
 {% set name = "fretraj" %}
-{% set version = "0.2.6a1" %}
+{% set version = "0.2.6a3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fretraj-{{ version }}.tar.gz
-  sha256: 8598ed14ca33fc7b1f1381ef8fdfa4c1d2867d0312bc0fc918d98c12f898e76e
+  sha256: 8cef8387c19e69932e98aa45cf36028e92f36dd3318766fac93f89e091cbe410
 
 build:
   number: 0
@@ -37,9 +37,7 @@ requirements:
     - jsonschema
     - mdtraj
     - pyqt
-    - colorama  # for tqdm on windows
     - tqdm
-    - pybind11
 
 test:
   imports:
