@@ -11,7 +11,7 @@ source:
   sha256: e40fec8bdaf53b3b67cce009739214a7af51b8f998273c1b0690cf73b57fa44b
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - "fretraj=fretraj.console:main"
