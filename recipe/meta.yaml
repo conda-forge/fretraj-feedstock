@@ -1,5 +1,5 @@
 {% set name = "fretraj" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fretraj-{{ version }}.tar.gz
-  sha256: e40fec8bdaf53b3b67cce009739214a7af51b8f998273c1b0690cf73b57fa44b
+  sha256: 11b20e39fb80ebfbe9ab5a2e53ce30fbc44af420710800c97afb6df675592b34
 
 build:
   number: 0
