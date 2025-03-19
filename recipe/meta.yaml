@@ -1,5 +1,5 @@
 {% set name = "fretraj" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fretraj-{{ version }}.tar.gz
-  sha256: 2813df472d2c44ce61598820c90223234af1208645a472656a44e595277aec20
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fretraj-{{ version }}.tar.gz
+  sha256: 589aacd578dc0e624f39b6ab2b8063e0e069d21ff36b328bb5c5d52eb303808b
 
 build:
   number: 0
@@ -22,10 +22,10 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
-    - poetry-core
     - pybind11
     - pybind11-abi
   run:
@@ -36,6 +36,7 @@ requirements:
     - importlib-metadata
     - jsonschema
     - mdtraj
+    - netcdf4 # for mdtraj
     - pyqt
     - tqdm
     - colorama # for tqdm on Windows
