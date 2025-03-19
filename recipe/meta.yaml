@@ -26,7 +26,6 @@ requirements:
   host:
     - python
     - pip
-    - poetry-core
     - pybind11
     - pybind11-abi
   run:
@@ -37,6 +36,7 @@ requirements:
     - importlib-metadata
     - jsonschema
     - mdtraj
+    - netcdf4 # for mdtraj
     - pyqt
     - tqdm
     - colorama # for tqdm on Windows
