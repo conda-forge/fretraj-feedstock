@@ -26,6 +26,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
     - pybind11
     - pybind11-abi
   run:
